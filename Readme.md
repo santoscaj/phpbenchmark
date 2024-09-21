@@ -16,7 +16,17 @@ These metrics help in understanding the efficiency and resource usage of differe
 
 1. Clone the repository
 
+
 2. Build the Docker image:
 ```BASH
 ./run-benchmark.sh
 ```
+
+### Actually Work in progresss. In the meantime run 
+```BASH
+vendor/bin/phpbench run benchmarks --report=expression --revs=100 --iterations=5
+```
+
+#### Future work
+- Properly update the `phpbench.json` file with proper outputs.
+- Properly update `PhpSpreadsheet.php` to properly test different things.
