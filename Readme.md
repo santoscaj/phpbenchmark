@@ -24,7 +24,7 @@ These metrics help in understanding the efficiency and resource usage of differe
 
 ### Actually Work in progresss. In the meantime run 
 ```BASH
-vendor/bin/phpbench run benchmarks --report=expression --revs=100 --iterations=5
+vendor/bin/phpbench run benchmarks --report=cli
 ```
 
 #### Future work

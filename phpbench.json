@@ -1,0 +1,23 @@
+{
+  "$schema": "./vendor/phpbench/phpbench/phpbench.schema.json",
+  "runner.bootstrap": "vendor/autoload.php",
+  "runner.path": "benchmarks",
+  "runner.iterations": 4,
+  "runner.revs": 5,
+  "report.generators": {
+    "cli": {
+      "generator": "expression",
+      "cols": [
+        "revs",
+        "its",
+        "benchmark",
+        "subject",
+        "set",
+        "mem_peak",
+        "mode",
+        "mean",
+        "worst"
+      ]
+    }
+  }
+}

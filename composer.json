@@ -1,4 +1,9 @@
 {
+    "autoload": {
+        "psr-4": {
+            "Benchmarks\\": "app/benchmarks/"
+        }
+    },
   "require": {
     "phpoffice/phpspreadsheet": "^2.2",
     "phpbench/phpbench": "^1.3"
