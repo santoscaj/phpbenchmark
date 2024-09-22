@@ -1,0 +1,29 @@
+{
+  "$schema": "./vendor/phpbench/phpbench/phpbench.schema.json",
+  "runner.bootstrap": "vendor/autoload.php",
+  "runner.path": "benchmarks",
+  "runner.iterations": 10,
+  "runner.revs": 10,
+  "report.outputs": {
+    "my_csv_output": {
+      "extends": "delimited",
+      "delimiter": ","
+    }
+  },
+  "report.generators": {
+    "cli": {
+      "generator": "expression",
+      "cols": [
+        "revs",
+        "its",
+        "benchmark",
+        "subject",
+        "set",
+        "mem_peak",
+        "mode",
+        "mean",
+        "worst"
+      ]
+    }
+  }
+}
