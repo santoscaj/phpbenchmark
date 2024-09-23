@@ -24,16 +24,22 @@ Since we're in the Discovery phase of the project, we need to understand the per
 2. Add your benchmarks to the `benchmarks` directory. Follow the example provided in the `PhpSpreadsheet.php` file.
 
 3. Update your configuration in the `phpbench.json` file. Important configurations include:
+
    - **runner.iterations**: The number of iterations to run the benchmark.
    - **runner.revs**: The number of revolutions to run per iteration.
    - **runner.subject_pattern**: The function that will be called for the benchmark.
    - **runner.file_pattern**: The pattern to match the benchmark files.
 
-[Complete phpbench documentation here](https://phpbench.readthedocs.io/en/latest/configuration.html#runner-subject-pattern)
+   [Complete phpbench documentation here](https://phpbench.readthedocs.io/en/latest/configuration.html#runner-subject-pattern)
 
 **Note:** As of now the processed files are overwritten to limit the number of output files. You can change this behavior by updating the `SEPARATE_OUTPUT_PER_TEST` constant in the `benchmarks/Benchmark.php` where `true` will create a separate output directory for each test.
 
-4. Run the report script `./run-benchmark.sh`.
+4. Run the report script:
+
+   ```BASH
+   ./run-benchmark.sh
+   ```
+
    If you would like to run a different command you can run `./run-benchmark.sh <command>`, example to change the default run settings:
 
    ```BASH
@@ -44,7 +50,7 @@ Since we're in the Discovery phase of the project, we need to understand the per
    - Check the processed files in the `output` directory.
    - Check the benchmarking results in the `results/chart.html` file.
 
-#### Directory Structure
+## Directory Structure
 
 - **benchmarks**: Contains the PHP libraries to be benchmarked.
 - **input**: Contains the files to be read by the PHP libraries.
