@@ -43,7 +43,7 @@ abstract class Benchmark
      *
      * @return void
      */
-    abstract public function benchFind( array $params): void;
+    abstract public function processFile( array $params): void;
 
     public function provideFiles(): Generator
     {

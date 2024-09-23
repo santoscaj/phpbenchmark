@@ -13,7 +13,7 @@ class PhpSpreadsheet extends Benchmark
     /**
      * @ParamProviders("provideFiles")
      */
-    public function benchFind(array $params): void
+    public function processFile(array $params): void
     {
         $input_file = $params['input_file'];
         $output_file = $params['output_file'];

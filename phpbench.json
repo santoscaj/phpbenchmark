@@ -1,9 +1,11 @@
 {
   "$schema": "./vendor/phpbench/phpbench/phpbench.schema.json",
   "runner.bootstrap": "vendor/autoload.php",
+  "runner.subject_pattern": "^processFile",
+  "runner.file_pattern": "*.php",
   "runner.path": "benchmarks",
-  "runner.iterations": 2,
-  "runner.revs": 3,
+  "runner.iterations": 5,
+  "runner.revs": 10,
   "report.generators": {
     "main": {
       "generator": "component",
@@ -17,7 +19,7 @@
             "run date": "first(partition['suite_date']) ~ ' ' ~ first(partition['suite_time'])",
             "php version": "first(partition?['env_php_version'])",
             "iterations": "first(partition['variant_iterations'])",
-            "revs": "first(partition['variant_revs'])",
+            "revolutions": "first(partition['variant_revs'])",
             "mode": "mode(partition['result_time_avg']) as time",
             "net_time": "sum(partition['result_time_net']) as time"
           }
