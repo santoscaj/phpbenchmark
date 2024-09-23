@@ -50,6 +50,15 @@ Since we're in the Discovery phase of the project, we need to understand the per
    - Check the processed files in the `output` directory.
    - Check the benchmarking results in the `results/chart.html` file.
 
+###### Overview Table
+![image](https://github.com/user-attachments/assets/fa5089cf-d8c3-435b-ab85-e25f7b33944a)
+
+###### Memory Graph
+![image](https://github.com/user-attachments/assets/146e0a28-ba24-405c-a1da-0e0af63e867a)
+
+###### Run Time Graph
+![image](https://github.com/user-attachments/assets/6f0b4715-29e9-4602-929e-cc861a518fa5)
+
 ## Directory Structure
 
 - **benchmarks**: Contains the PHP libraries to be benchmarked.
